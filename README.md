@@ -12,3 +12,14 @@ First go api
         log "github.com/sirupsen/logrus"
     )
     ```
+- Start server with `go run cmd/api/main.go`
+- Query the server from a different terminal
+    ```bash
+    # 200 response from mock db
+    curl localhost:8000/account/coins/?username=jason \
+        -H "Authorization: 456DEF"
+    ```
+    ```bash
+    # 400 failed response
+    curl localhost:8000/account/coins
+    ```

@@ -10,8 +10,8 @@ type CoinBalanceParams struct {
 }
 
 type CoinBalanceResponse struct {
-	Code   int // Status code - 200,404 etc
-	Balanc int64
+	Code    int // Status code - 200,404 etc
+	Balance int64
 }
 
 type Error struct {
